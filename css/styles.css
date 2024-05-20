@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.pc-nav {
+  display: none;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.hamburger-menu {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid green;
+}
+.hamburger-menu .line {
+  background: black;
+  height: 2px;
+  width: 70%;
+}
+
+.banner {
+  background-color: rgb(216, 226, 219);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.banner img {
+  width: 100%;
+}
+.banner button {
+  height: 50px;
+  width: 150px;
+  background-color: green;
+  color: white;
+}
+
+service {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: rgb(216, 226, 219);
+}
+
+.button {
+  display: flex;
+  text-align: center;
+}
+
+.benefits #heading-center {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.benefits .center-items {
+  text-align: left;
+}
+.benefits .card {
+  padding: 1rem;
+  background: rgb(216, 226, 219);
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mission {
+  background-image: url("../images/IMG_2314.PNG");
+  background-size: cover;
+  background-color: black;
+  height: 50vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.mission h1 {
+  padding-top: 50px;
+  margin-left: 200px;
+  gap: 10px;
+}
+.mission p {
+  margin-left: 200px;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.col-md-6 .button {
+  width: 100%;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+  .banner-phone {
+    height: 60vh;
+  }
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .banner-phone {
+    display: block;
+  }
+  .banner-pc {
+    display: block;
+  }
+  .pc-nav {
+    display: block;
+  }
+  .service-pc {
+    display: block;
+  }
+  .services-phone {
+    display: none;
+  }
+  .pc-nav .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pc-nav .flex-container ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: green;
+  }
+  .pc-nav .flex-container button {
+    background: green;
+    height: 50px;
+    width: 180px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  .banner-pc {
+    background-color: rgb(216, 226, 219);
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+  .banner-pc img {
+    width: 100%;
+  }
+  .banner-pc button {
+    height: 50px;
+    width: 150px;
+    background-color: green;
+    color: white;
+  }
+}
+.services {
+  margin-top: 10px;
+  text-align: center;
+  background: rgb(216, 226, 219);
+}
+
+.service {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  background: rgb(216, 226, 219);
+}
+.service img {
+  width: 100%;
+}
+
+ul {
+  color: green;
+}
+
+.mission {
+  background-image: url("../images/IMG_2314.PNG");
+  display: flex;
+  height: 50%;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .pc-nav .flex-container ul {
+    gap: 80px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=styles.css.map */
